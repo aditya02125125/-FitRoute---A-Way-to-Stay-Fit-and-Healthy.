@@ -1,0 +1,547 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    cursor: default;
+}
+.background{
+    background-image: url(./background\ black.png);
+    background-size: 100vw 110%;
+    background-repeat: no-repeat;
+}
+
+/* GO TOP BUTTON */
+
+#go-top {
+    position: fixed;
+    right: 2vw;
+    bottom: 2vw;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+#go-top:hover {
+    opacity: 1;
+}
+#go-top img {
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    margin: 0px auto;
+}
+nav a{
+    color: gold;
+    text-decoration: none;
+}
+nav img{
+    width: 140px;
+}
+nav h2{
+    font-size: 38px;
+}
+#home-button{
+    border-bottom: 2px solid goldenrod;
+}
+nav #nav-buttons-container {
+    background-color: #181818;
+    color: gold;
+    width: 800px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav #workout-now {
+    background-color: gold;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 5px 10px 20px -10px rgb(225, 225, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-buttons-container div {
+    position: relative;
+}
+#nav-buttons-container hr {
+    width: 0;
+    margin: 0;
+    border: none;
+    border-top: 2px solid gold;
+    position: absolute;
+    top: 22px;
+    left: 0;
+}
+
+
+.body-area{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+.body-area-first{
+    animation-name: slideUp;
+    animation-duration: 1s;
+    display: flex;
+}
+.start{
+    margin-top: 100px;
+    margin-left: 150px;
+    color: goldenrod;
+    font-size: 48px;
+}
+.trans-container{
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 20px;
+    border: 4px solid goldenrod;
+    width: 160px;
+    height: 0px;
+    border-radius: 30px;
+    
+    color: goldenrod;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.your {
+    margin-top: 100px;
+    margin-left: 20px;
+    color: goldenrod;
+    font-size: 48px;
+}
+
+
+.body-area-2nd{
+    animation-name: slideUp;
+    animation-duration: 1s;
+    display: flex;
+}
+.fitness{
+    color: goldenrod;
+    margin-left: 150px;
+    font-size: 48px;
+}
+.journey{
+    color: goldenrod;
+    margin-left: 110px;
+    font-size: 48px;
+}
+.body-area-3rd{
+    animation-name: slideUp;
+    animation-duration: 1s;
+    display: flex;
+    align-items: center;
+}
+.body-area-3rd h1{
+    color: goldenrod;
+    margin-left: 150px;
+    font-size: 55px;
+    margin-top: -5px;
+}
+
+progress {
+background-color: goldenrod;
+border: 2px solid goldenrod;
+border-radius: 50px;
+margin-left: 50px;
+width: 300px;
+height: 20px;
+}
+progress::-moz-progress-bar{
+    background-color: darkgray;
+}
+progress::-webkit-progress-bar{
+    border-radius: 50px;
+
+}
+progress::-webkit-progress-value{
+    border-radius: 50px;
+    background-color: goldenrod;
+}
+.paragraph{
+animation-name: slideUp;
+animation-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+}
+.paragraph p{
+    font-size: 18px;
+    margin-left: 155px;
+    margin-right: 600px;
+}
+svg{
+    animation-name: slideUp;
+animation-duration: 1s;
+    position: absolute;
+    bottom: -70px;
+    left: 1000px;
+    width: 310px;
+    stroke: black;
+    color: white;
+}
+.rotate-button button{
+    animation-name: slideUp;
+animation-duration: 1s;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 1300px;
+    bottom: 20px;
+    background-color: black;
+    width: 50px;
+    opacity: 0.5;
+}
+.rotate-button button:hover {
+    opacity: 1;
+}
+.rotate-button img{
+    border-radius: 30%;
+    width: 50px;
+}
+.abs:hover,
+.traps-middle1:hover,
+.traps1:hover{
+    fill: red;
+}
+.three-boxes{
+    animation-name: slideUp;
+animation-duration: 1s;
+    display: flex;
+}
+.first-box-contents{
+background-color: grey;
+padding: 10px;
+margin-left: 140px;
+width: 170px;
+padding-bottom: 100px;
+margin-top: 20px;
+border-radius: 30px;
+}
+.first-box-contents h1{
+color: white;
+font-size: 20px;
+text-align: center;
+}
+.first-box-contents img{
+    width: 50px;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.second-box-contents{
+    background-color: grey;
+    padding: 10px;
+    margin-left: 30px;
+    width: 170px;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.second-box-contents h1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    }
+    .second-box-contents img{
+        width: 50px;
+        margin-left: 60px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .third-box-contents{
+        background-color: grey;
+        padding: 10px;
+        margin-left: 30px;
+        width: 170px;
+        padding-bottom: 100px;
+        margin-top: 20px;
+        border-radius: 30px;
+    }
+    .third-box-contents h1{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    .third-box-contents img{
+            width: 50px;
+            margin-left: 60px;
+            margin-top: 50px;
+            margin-bottom: 10px;
+    }
+.workout-bar{
+    animation-name: slideUp;
+animation-duration: 1s;
+    display: flex;
+    margin-top: 60px ;
+    height: 250px;
+    background-color: goldenrod;
+    color: white;
+}
+.workout-bar img{
+    border: 10px solid goldenrod;
+    margin-top: -35px;
+    margin-left: 60px;
+    width: 320px;
+    height: 290px;
+    border-radius: 30px;
+}
+.workout-bar h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.workout-bar-para a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin-left: 530px;
+    background-color: black;
+    color: white;
+}
+.why-workout{
+    animation-name: slideUp;
+    animation-duration: 1s;
+    margin: 60px auto;
+    font-size: 25px;
+    color: goldenrod;
+    text-align: center;
+}
+.why-workout-boxes{
+    animation-name: slideUp;
+animation-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.physical-health-box{
+    border-radius: 30px;
+text-align: center;
+    height: 350px;
+    background-color: goldenrod;
+    width: 320px;
+}
+.physical-health-box h1{
+    margin-top: 40px;
+    font-size: 38px;
+}
+.physical-health-box p{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.energy-boost-box{
+    border-radius: 30px;
+    text-align: center;
+    background-color: goldenrod;
+    width: 320px;
+    height: 350px;
+    margin-left: 80px ;
+}
+
+.energy-boost-box h1{
+    margin-top: 40px;
+    font-size: 38px;
+}
+.energy-boost-box p{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.quality-of-life-box{
+    border-radius: 30px;
+    text-align: center;
+    background-color: goldenrod;
+    width: 320px;
+    height: 350px;
+    margin-left: 80px ;
+}
+
+.quality-of-life-box h1{
+    margin-top: 40px;
+    font-size: 38px;
+}
+.quality-of-life-box p{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.calorie-bar{
+    animation-name: slideUp;
+animation-duration: 1s;
+    display: flex;
+    margin-top: 90px ;
+    height: 250px;
+    background-color: goldenrod;
+    color: white;
+}
+.calorie-bar img{
+    border: 10px solid goldenrod;
+    margin-top: -35px;
+    margin-left: 60px;
+    width: 320px;
+    height: 290px;
+    border-radius: 30px;
+}
+.calorie-bar h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.calorie-bar-para a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin-left: 500px;
+    background-color: black;
+    color: white;
+}
+.bmi-bar{
+    animation-name: slideUp;
+animation-duration: 1s;
+    display: flex;
+    margin-top: 90px ;
+    height: 250px;
+    background-color: goldenrod;
+    color: white;
+}
+.bmi-bar img{
+    border: 10px solid goldenrod;
+    margin-top: -30px;
+    margin-right: 30px;
+    width: 320px;
+    height: 290px;
+    border-radius: 30px;
+}
+.bmi-bar h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 80px;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.bmi-bar-para a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin-left: 515px;
+    background-color: black;
+    color: white;
+}
+.fotter-gap {
+    height: 90px;
+}
+
+/* fotter */
+footer {
+    background-color: #181818;
+    padding-top: 10px;
+}
+
+#popular-videos-container{
+}
+
+#popular-videos-container h1 {
+    margin: 35px auto 35px;
+    margin-left: 10vw;
+}
+#video-grid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 90px;
+    width: 80vw;
+    margin: 50px auto 20px;
+}
+#video-grid div {
+}
+#video-grid div div {
+    width: 100%;
+    height: 200px;
+    border: 2px solid gold;
+}
+#video-grid iframe {
+    width: 100%;
+    height: 100%;
+}
+#video-grid div p {
+    margin: 20px auto;
+}
+#by-sans {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 1px;
+}
+#by-sans h1 {
+    font-family: "Permanent Marker", cursive;
+    color: white;
+    text-shadow: 2px -2px 3px violet;
+    margin: 70px 0 50px;
+}
+
+hr {
+    margin: 30px auto;
+    width: 90vw;
+    border: 1px solid gold;
+    transition: all 0.2s;
+}
+#popular-videos-container h1 {
+    font-size: 2.8rem;
+    color: gold;
+}
+#video-grid p {
+    color: white;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+/*back body svg*/
+
+.lowerback1:hover{
+    fill: red;
+}
